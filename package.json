@@ -9,7 +9,6 @@
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
-    "prepare": "husky install",
     "lint": "yarn lint:js && yarn lint:style",
     "codegen": "graphql-codegen --config codegen.yml"
   },
@@ -18,20 +17,32 @@
     "*.{css,vue}": "stylelint"
   },
   "dependencies": {
+    "@nuxtjs/composition-api": "^0.30.0",
     "@nuxtjs/pwa": "^3.3.5",
+    "chart.js": "^3.6.0",
     "core-js": "^3.15.1",
     "graphql": "^16.0.1",
-    "nuxt": "^2.15.7"
+    "nuxt": "^2.15.7",
+    "vue-chart-3": "^0.5.11"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
     "@graphql-codegen/cli": "2.2.2",
+    "@graphql-codegen/introspection": "2.1.0",
+    "@graphql-codegen/typescript": "2.3.1",
+    "@graphql-codegen/typescript-document-nodes": "2.2.0",
+    "@graphql-codegen/typescript-operations": "^2.2.0",
+    "@graphql-codegen/typescript-resolvers": "2.4.0",
+    "@graphql-codegen/typescript-vue-apollo": "^3.2.0",
+    "@graphql-codegen/typescript-vue-apollo-smart-ops": "^2.2.0",
     "@nuxt/types": "^2.15.7",
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^6.0.1",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/stylelint-module": "^4.0.0",
     "@nuxtjs/tailwindcss": "^4.2.0",
+    "@vue/apollo-composable": "^4.0.0-alpha.15",
+    "@vue/composition-api": "^1.4.0-beta.0",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^2.0.0",
@@ -43,9 +54,6 @@
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^22.0.0",
-    "@graphql-codegen/typescript": "2.3.1",
-    "@graphql-codegen/typescript-document-nodes": "2.2.0",
-    "@graphql-codegen/typescript-resolvers": "2.4.0",
-    "@graphql-codegen/introspection": "2.1.0"
+    "vue-apollo-smart-ops": "^0.2.0-beta.1"
   }
 }
